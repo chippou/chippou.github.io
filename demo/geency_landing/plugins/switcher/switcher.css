@@ -1,0 +1,219 @@
+/* styleswitcher-right */
+.styleswitcher-right .switcher-title {
+    font-weight: 800;
+    margin: 10px 5px;
+    text-transform: uppercase;
+}
+.styleswitcher-right {
+    background-color: #ffffff;
+    box-shadow: -3px 1px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    right: -300px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 220px;
+    z-index: 999;
+}
+.styleswitcher-right .switcher-btn-bx {
+    position: absolute;
+    left: -40px;
+    top: 200px;
+}
+.styleswitcher-right .switch-btn { 
+	box-shadow:-3px 1px 5px rgba(0, 0, 0, 0.1); 
+}
+/* styleswitcher-right End */
+.styleswitcher .switcher-title {
+    font-weight: 800;
+    margin: 10px 5px;
+    text-transform: uppercase;
+}
+.styleswitcher {
+    background-color: #ffffff;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    left: -220px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 220px;
+    z-index: 999;
+}
+.styleswitcher-inner {
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.styleswitcher .switcher-btn-bx {
+    box-shadow: 7px 0 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: -40px;
+    top: 200px;
+}
+.switch-btn {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    cursor: pointer;
+    display: block;
+    font-size: 21px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+	border-radius: 2px 0 0 2px;
+}
+.layout-view, .nav-view, .header-view, .color-skins, .pattern-switcher, .background-switcher {
+    margin: 0;
+    padding: 0;
+}
+.layout-view li, .nav-view li, .header-view li {
+    border: 2px solid #999999;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    margin: 5px;
+    min-width: 70px;
+    padding: 5px 15px;
+    text-align: center;
+}
+.layout-view li.active, .nav-view li.active, .header-view li.active {
+    border: 2px solid #333333;
+    color: #333333;
+}
+.color-skins li {
+    cursor: pointer;
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 4px 10px;
+}
+.color-skins li a {
+    border:1px solid rgba(0,0,0,0.1);
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+.color-skins li .skin-1 {
+    background-color: #efbb20;
+}
+.color-skins li .skin-2 {
+    background-color: #e63f75;
+}
+.color-skins li .skin-3 {
+    background-color: #42b8d4;
+}
+.color-skins li .skin-4 {
+    background-color: #35b494;
+}
+.color-skins li .skin-5 {
+    background-color: #de2121;
+}
+.color-skins li .skin-6 {
+    background-color: #e56713;
+}
+.color-skins li .skin-7 {
+    background-color: #9f5ba4;
+}
+.color-skins li .skin-8 {
+    background-color: #5c85b7;
+}
+.background-switcher li {
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    margin: 0 4px 10px;
+    width: 35px;
+}
+.pattern-switcher li {
+    cursor: pointer;
+    display: inline-block;
+    height: 19px;
+    margin: 0 4px 10px;
+    width: 19px;
+}
+
+/* Buy Now */
+.buy-now-btn {
+    background: #81b441 none repeat scroll 0 0;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-family: open sans;
+    font-weight: 600;
+    padding: 10px 20px;
+    position: fixed;
+    right: -90px;
+    text-transform: uppercase;
+    top: 50%;
+    transition: all 0.5s;
+	z-index:999;
+}
+.buy-now-btn i{
+	font-size:16px;
+}
+.buy-now-btn:hover {
+	right:-1px;
+	transition: all 0.5s;
+	color:#fff;
+}
+.buy-now-btn i{
+	margin-right:10px;
+	
+}
+@media only screen and (max-width: 1024px) {
+	.styleswitcher{
+		display:none;
+	}
+}
+
+.dz-demo-box {
+    display: inline-block;
+    width: 50%;
+	position:relative;
+	padding:3px;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
+}
+.dz-demo-box a{
+	background:#000316;
+	display:block;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
+}
+.dz-demo-box a > img {
+    height: 120px;
+    object-fit: cover;
+    object-position: center top;
+    width: 100%;
+	opacity:0.3;
+}
+.dz-demo-box img{
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
+}
+.dz-demo-box a span{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50% , -50%);
+	-webkit-transform:translate(-50% , -50%);
+	-o-transform:translate(-50% , -50%);
+	-moz-transform:translate(-50% , -50%);
+	opacity:1;
+	-moz-transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+	transition:all 0.5s;
+	
+}
+.demo-home-page{
+	width:300px;
+}
+
