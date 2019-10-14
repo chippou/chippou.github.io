@@ -37,6 +37,11 @@ $(document).ready(function () {
     $(".ajax-page-load").click(function (e) {
         e.preventDefault();
         var articleURL = $(this).attr("href");
+        if ($(this).hasClass("disabled")) {
+            window.open(articleURL, '_blank');
+            return;
+        }
+        
         loadAndShowArticleFromURL(articleURL);
         $(this).parent().parent().addClass("active");
         history.pushState("", "Dat dang profile", "/#portfolio?project=" + $(this).attr("projectId"));
